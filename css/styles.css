@@ -1,9 +1,13 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .list {
     list-style: none;
 }
 .link {
     text-decoration: none;
 }
+/* <<<<< Шапка сайта >>>>> */
 .logotype {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -27,7 +31,6 @@ span {
     color: #2E2F42;
 }
 .menu {
-    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -35,26 +38,40 @@ span {
     color: #2E2F42;
 }
 .menu-contact  {
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
+/* <<<<< /Шапка сайта >>>>> */
+
+/* <<<<< Компоненти >>>>> */
 .title {
-    font-family: 'Roboto', sans-serif;
     font-weight: 600;
+    color: #2E2F42;
 }
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+    letter-spacing: 0.02em;
+}
+/* <<<<< /Компоненти >>>>> */
+
+/* <<<<< Тіло сторінки >>>>> */
+
+/* <<<<< Герой >>>>> */
+
 .title-hero {
-font-size: 56px;
-line-height: 1.07;
-text-align: center;
-letter-spacing: 0.02em;
-color: #FFFFFF;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
 }
 .btn {
-    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
@@ -69,4 +86,57 @@ color: #FFFFFF;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
 }
+.btn:hover,
+.btn:focus {
+    background-color: orangered;
+    
+}
+/* <<<<< /Герой >>>>> */
+
+/* <<<<< Властивості >>>>> */
+.page-prorties-title {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+/* <<<<< /Властивості >>>>> */
+
+/* <<<<< Продукт >>>>> */
+.product-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+/* <<<<< /Продукт >>>>> */
+
+/* <<<<< Комана >>>>> */
+.employees-title {
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.employees-name {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+}
+/* <<<<< /Комана >>>>> */
+
+/* <<<<< Футер >>>>> */
+.footer-text {
+    color: #E7E9FC;
+}
+/* <<<<< /Футер >>>>> */
+
+
+
