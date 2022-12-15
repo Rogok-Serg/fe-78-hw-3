@@ -1,5 +1,11 @@
+:root {
+    --accent-color: orangered;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+}
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
     background: #FFFFFF;
 }
 .list {
@@ -10,7 +16,7 @@ body {
 }
 /* <<<<< Шапка сайта >>>>> */
 .logotype {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -21,7 +27,7 @@ body {
     color: #4D5AE5;
 }
 span {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -44,7 +50,7 @@ span {
 } 
 .menu-link:hover,
 .menu-link:focus {
-    color:orangered;
+    color: var(--accent-color);
 }
 .menu-contact  {
     font-weight: 400;
@@ -61,11 +67,11 @@ span {
 
 .contact-mail:hover,
 .contact-mail:focus {
-    color:orangered;
+    color:var(--accent-color);
 }
 .contact-phone:hover,
 .contact-phone:focus {
-    color: orangered;
+    color: var(--accent-color);
 }
 /* <<<<< /Шапка сайта >>>>> */
 
@@ -85,8 +91,6 @@ span {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
-
 }
 /* <<<<< /Компоненти >>>>> */
 
@@ -120,7 +124,7 @@ span {
 }
 .btn:hover,
 .btn:focus {
-    background-color: orangered;
+    background-color: var(--accent-color);
     
 }
 /* <<<<< /Герой >>>>> */
@@ -186,7 +190,7 @@ span {
     font-size: 16px;
     line-height: 24px;
     display: flex;
-    align-items: center;
+   
     text-align: center;
     letter-spacing: 0.04em;
     color: #4D5AE5;
@@ -197,19 +201,5 @@ span {
 .btn-filters:focus {
     background-color: #4D5AE5;
     color: #FFFFFF;
-}
-.page-title {
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-
-}
-.page-title {
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-
 }
 /* <<<<< /Тіло сторінки портфоліо >>>>> */
