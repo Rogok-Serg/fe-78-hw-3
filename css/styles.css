@@ -46,7 +46,9 @@ body {
 
 /* <<<<< Шапка сайта >>>>> */
 .page-header {
-    background: #FFFFFF;  
+    background: #FFFFFF; 
+ 
+ 
 }
 .page-header-container {
     display: flex;
@@ -147,6 +149,7 @@ span {
 
 /* <<<<< Герой >>>>> */
 .hero {
+    height: 603px;
     background-color: #2E2F42;
 }
 .hero-container {
@@ -212,8 +215,7 @@ span {
 
 /* <<<<< Продукт >>>>> */
 .product-container {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 .page-product-list {
     display: flex;
@@ -224,7 +226,7 @@ span {
 .product-title {
     display: flex;
     justify-content: center;
-   
+    margin-bottom: 72px;
     font-weight: 600;
     font-size: 36px;
     line-height: 1.1;
@@ -236,6 +238,10 @@ span {
 /* <<<<< /Продукт >>>>> */
 
 /* <<<<< Команда >>>>> */
+.employees-container {
+    background: #F4F4FD;
+    padding-bottom: 120px;
+}
 .page-employees-list {
     display: flex;  
     justify-content: center;
@@ -247,10 +253,7 @@ span {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
-.employees-container {
-    background: #F4F4FD;
-    height: 732px;
-}
+
 .employees-title {
     display: flex;
     justify-content: center;
@@ -326,7 +329,8 @@ span {
 .filters-btn-list {
     display: flex;
     justify-content: center; 
-    margin-top: 96px;
+    padding-top: 96px;
+    padding-bottom: 72px;
     gap: 24px;
     font-size: 16px;
     line-height: 1.5;
@@ -354,16 +358,19 @@ span {
 /* <<<<< /Кнопки >>>>> */
 
 /* <<<<< Картки >>>>> */
+.cards {
+    padding-bottom: 120px;
+    
+}
 
 .portfolio-list {
     display: flex;
-    flex-wrap: wrap;    
-    margin-top: 72px;
-    margin-bottom: 120px;
+    flex-wrap: wrap; 
     column-gap: 24px;
     row-gap: 48px;
+       
 }
-.card-link {
+.title-text{
     background: #FFFFFF;
     border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
