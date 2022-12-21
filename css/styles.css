@@ -1,3 +1,31 @@
+/* <<<<< Скидання >>>>> */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+/* <<<<< /Скидання >>>>> */
+
 :root {
     --accent-color: orangered;
     --primary-font: 'Roboto', sans-serif;
@@ -8,20 +36,34 @@ body {
     font-family: var(--primary-font);
     background: #FFFFFF;
 }
-.list {
-    list-style: none;
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.link {
-    text-decoration: none;
-}
+
 /* <<<<< Шапка сайта >>>>> */
+.page-header {
+    background: #FFFFFF;  
+}
+.page-header-container {
+    display: flex;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    padding-top: 24px;
+    padding-bottom: 24px;   
+}
+.page-nav {
+    display: flex;
+    align-items: center;
+}
 .logotype {
+    margin-right: 77px;
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
@@ -31,18 +73,21 @@ span {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2E2F42;
 }
 .menu {
+    display: flex;
+    align-items: center;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
+}
+.menu-item:not(:last-child) {
+    margin-right: 40px;
 }
 .menu-link {
     font-weight: 600;
@@ -53,16 +98,20 @@ span {
     color: var(--accent-color);
 }
 .menu-contact  {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    
+    letter-spacing: 0.02em;   
+}
+.contact-mail {
+    margin-right: 40px;
 }
 .contact-mail,
 .contact-phone {
     color: #434455;
-
 }
 
 .contact-mail:hover,
@@ -97,30 +146,39 @@ span {
 /* <<<<< Тіло сторінки >>>>> */
 
 /* <<<<< Герой >>>>> */
-
+.hero {
+    background-color: #2E2F42;
+}
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
 .title-hero {
+    display: flex;
+    padding-top: 192px;
+    margin-bottom: 48px; 
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
 }
 .btn {
+    display: flex;  
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.19;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 16px 32px;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    border: 1px solid #4D5AE5
 }
 .btn:hover,
 .btn:focus {
@@ -130,16 +188,43 @@ span {
 /* <<<<< /Герой >>>>> */
 
 /* <<<<< Властивості >>>>> */
-.page-prorties-title {
+.page-properties-list {
+    display: flex;
+    gap: 24px;
+}
+.properties-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.page-properties-title {
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
+
 /* <<<<< /Властивості >>>>> */
 
 /* <<<<< Продукт >>>>> */
+.product-container {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.page-product-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
 .product-title {
+    display: flex;
+    justify-content: center;
+   
     font-weight: 600;
     font-size: 36px;
     line-height: 1.1;
@@ -151,23 +236,77 @@ span {
 /* <<<<< /Продукт >>>>> */
 
 /* <<<<< Команда >>>>> */
+.page-employees-list {
+    display: flex;  
+    justify-content: center;
+    gap: 24px;
+
+}
+.page-employees-link {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+.employees-container {
+    background: #F4F4FD;
+    height: 732px;
+}
 .employees-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    margin-bottom: 72px; 
     font-size: 36px;
     line-height: 1.1;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
 .employees-name {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-
 }
+.employees-position {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
 /* <<<<< /Команда >>>>> */
 
 /* <<<<< Футер >>>>> */
+.footer-page {
+    
+    background-color: #2E2F42;   
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    height: 310px;
+    
+}
+.footer-logotype {
+    display: flex;
+    padding-top: 100px;   
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+}
+.footer-span {
+    color: #F4F4FD;}
 .footer-text {
+    display: flex;
+    margin-top: 16px;
+    padding-bottom: 100px;
+    width: 264px;
     color: #E7E9FC;
 }
 /* <<<<< /Футер >>>>> */
@@ -176,22 +315,32 @@ span {
 /* <<<<< /Шапка портфоліо >>>>> */
 
 /* <<<<< Тіло сторінки портфоліо >>>>> */
+
+/* <<<<< Кнопки >>>>> */
+.menu-btn {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    background-color: #FFFFFF;      
+}
 .filters-btn-list {
+    display: flex;
+    justify-content: center; 
+    margin-top: 96px;
+    gap: 24px;
     font-size: 16px;
     line-height: 1.5;
-    align-items: center;
     letter-spacing: 0.04em;
 }
 
 .btn-filters {
+    display: flex;
+    padding: 12px 24px;
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     font-size: 16px;
     line-height: 24px;
-    display: flex;
-   
-    text-align: center;
     letter-spacing: 0.04em;
     color: #4D5AE5;
     cursor: pointer;
@@ -202,4 +351,35 @@ span {
     background-color: #4D5AE5;
     color: #FFFFFF;
 }
+/* <<<<< /Кнопки >>>>> */
+
+/* <<<<< Картки >>>>> */
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;    
+    margin-top: 72px;
+    margin-bottom: 120px;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.card-link {
+    background: #FFFFFF;
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.card-title {
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+}
+.card-text {
+    padding-left: 16px;
+    padding-bottom: 32px;
+}
+
+/* <<<<< Картки >>>>> */
+
+/* <<<<< /Картки >>>>> */
+
 /* <<<<< /Тіло сторінки портфоліо >>>>> */
