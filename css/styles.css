@@ -152,11 +152,17 @@ span {
     padding-top: 192px;
     padding-bottom: 192px;
     background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/2-page/backround/people-office.jpg');
+    background-size: 1440px 600px;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    
+    
 }
 .hero-container {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;     
 }
 .title-hero {
     display: flex;
@@ -213,6 +219,23 @@ span {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    
+}
+.properties-svg {
+    width: 64px;
+    height: 64px;
+    
+
+}
+.properties-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background: #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 /* <<<<< /Властивості >>>>> */
@@ -227,9 +250,7 @@ span {
     gap: 24px;
 }
 
-.product-title {
-    display: flex;
-    justify-content: center;
+.product-title {  
     margin-bottom: 72px;
     font-weight: 600;
     font-size: 36px;
@@ -242,15 +263,12 @@ span {
 /* <<<<< /Продукт >>>>> */
 
 /* <<<<< Команда >>>>> */
-.employees {
-    
+.employees {    
     padding-top: 120px;
     padding-bottom: 120px;
     background: #F4F4FD;
 }
-.employees-container {
-      
-}
+
 .page-employees-list {
     display: flex;  
     justify-content: center;
@@ -265,12 +283,11 @@ span {
     border-radius: 0px 0px 4px 4px;
 }
 
-.employees-title {
-    display: flex;
-    justify-content: center;
+.employees-title {   
     margin-bottom: 72px; 
     font-size: 36px;
     line-height: 1.1;
+    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
@@ -286,8 +303,56 @@ span {
     justify-content: center;
     margin-top: 8px;
 }
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #4D5AE5;
+}
 
 /* <<<<< /Команда >>>>> */
+
+/* <<<<< Клієнти >>>>> */
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+    
+}
+.customer-title {
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 72px;
+}
+.customers-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+/* <<<<< /Клієнти >>>>> */
+
 
 /* <<<<< Футер >>>>> */
 .footer-page {
@@ -313,12 +378,48 @@ span {
 }
 .footer-span {
     color: #F4F4FD;}
+    
 .footer-text {
     display: flex;
     margin-top: 16px;
     width: 264px;
     color: #E7E9FC;
 }
+.footer-page-list {
+    display: flex;
+}
+.footer-social-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+.footer-social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+.fotter-social-list-item {
+    margin-left: 120px;
+    
+    
+}
+
+
 /* <<<<< /Футер >>>>> */
 
 /* <<<<< Шапка портфоліо >>>>> */
